@@ -6,84 +6,135 @@
   <title>Fork Me! FCC: Test Suite Template</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    body{
+    body {
       font-family: sans-serif;
       letter-spacing: 1px;
       padding: 30px;
       background: darkcyan;
     }
 
-    #title{
+    #title {
       color: white;
       text-align: center;
       margin: 20px auto;
     }
-    #description{
+
+    #description {
       text-align: center;
       color: darkblue;
       margin: 10px auto;
     }
 
-    #survey-form{
+    #survey-form {
       width: 60%;
       margin: 40px auto;
-      background: lightgray;
       padding: 20px;
       border-radius: 20px;
     }
 
+    .survey {
+      display: block;
+    }
 
+    label,
+    input {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .option {
+      text-align: center;
+    }
+
+
+    .comments {
+      display: block;
+    }
+
+    .textA {
+      width: 500px;
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #submit {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container {
+      width: 1000px;
+      height: auto;
+      margin: 0 auto;
+      background-color: aquamarine;
+      padding: 10px;
+    }
   </style>
 </head>
 
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <div class="title">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </div>
 
-  <form id="survey-form">
-    <label id="name-label" for="name">Name</label>
-    <input type="name" name="name" id="name" placeholder="Enter your name" required="">
+  <div class="container">
+    <div class="survey">
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input type="name" name="name" id="name" placeholder="Enter your name" required="">
 
-    <label id="email-label" for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email" required="">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required="">
 
-    <label id="number-label" for="number">Number</label>
-    <input type="number" name="" id="number" placeholder="Enter your number" min="20" max="100">
+        <label id="number-label" for="number">Number</label>
+        <input type="number" name="" id="number" placeholder="Enter your number" min="20" max="100">
 
-    <select id="dropdown">
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
-    </select>
+    </div>
+    <div class="option">
+      <select id="dropdown">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </select>
+    </div>
 
-    <label for="radio1"> Radio Label 1</label>
+    <div class="radios">
+      <label for="radio1"> Radio Label 1</label>
       <input type="radio" name="radio1" id="radio1" value="radio1">
-    
-    <label for="radio2"> Radio Label 2</label>
+
+      <label for="radio2"> Radio Label 2</label>
       <input type="radio" name="radio1" id="radio2" value="radio2">
-    
-    <label for="radio3"> Radio Label 3</label>
+
+      <label for="radio3"> Radio Label 3</label>
       <input type="radio" name="radio1" id="radio3" value="radio3">
 
-    <label for="checkbox1">Checkbox 1</label>
-    <input type="checkbox" name="checkboxes" id="checkbox1" value="Checkbox1">
+      <label for="checkbox1">Checkbox 1</label>
+      <input type="checkbox" name="checkboxes" id="checkbox1" value="Checkbox1">
 
-    <label for="checkbox2">Checkbox 2</label>
-    <input type="checkbox" name="checkboxes" id="checkbox2" value="Checkbox2">
+      <label for="checkbox2">Checkbox 2</label>
+      <input type="checkbox" name="checkboxes" id="checkbox2" value="Checkbox2">
 
-    <label for="checkbox3">Checkbox 3</label>
-    <input type="checkbox" name="checkboxes" id="checkbox3" value="Checkbox3">
+      <label for="checkbox3">Checkbox 3</label>
+      <input type="checkbox" name="checkboxes" id="checkbox3" value="Checkbox3">
 
-    <textarea>Comments</textarea>
 
-    <button type="submit" id="submit">Submit Form</button>    
+    </div>
+    <div class="comments">
+      <br>
+
+      <textarea class="textA">Comments</textarea>
+      <button type="submit" id="submit">Submit Form</button>
+    </div>
+  </div>
 
 
 
