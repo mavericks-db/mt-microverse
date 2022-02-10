@@ -6,24 +6,55 @@
   <title>Fork Me! FCC: Test Suite Template</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .title {
-      color: darkblue;
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body{
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      padding: 30px;
+      background: darkcyan;
+    }
+
+    #title{
+      color: white;
+      text-align: center;
+      margin: 20px auto;
+    }
+    #description{
+      text-align: center;
+      color: darkblue;
+      margin: 10px auto;
+    }
+
+    #survey-form{
+      width: 60%;
+      margin: 40px auto;
+      background: lightgray;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+
   </style>
 </head>
 
 <body>
   <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p>Thank you for taking the time to help us improve the platform</p>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
 
   <form id="survey-form">
-    <label id="name-label">Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name">
+    <label id="name-label" for="name">Name</label>
+    <input type="name" name="name" id="name" placeholder="Enter your name" required="">
 
-    <label id="email-label">Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required="">
 
-    <label id="number-label">Number</label>
+    <label id="number-label" for="number">Number</label>
     <input type="number" name="" id="number" placeholder="Enter your number" min="20" max="100">
 
     <select id="dropdown">
@@ -31,15 +62,28 @@
       <option>Option 2</option>
       <option>Option 3</option>
     </select>
-    <label> Radio Label 1
-      <input type="radio" name="radio1">
-    </label>
-    <label> Radio Label 2
-      <input type="radio" name="radio2">
-    </label>
-    <label> Radio Label 3
-      <input type="radio" name="radio3">
-    </label>
+
+    <label for="radio1"> Radio Label 1</label>
+      <input type="radio" name="radio1" id="radio1" value="radio1">
+    
+    <label for="radio2"> Radio Label 2</label>
+      <input type="radio" name="radio1" id="radio2" value="radio2">
+    
+    <label for="radio3"> Radio Label 3</label>
+      <input type="radio" name="radio1" id="radio3" value="radio3">
+
+    <label for="checkbox1">Checkbox 1</label>
+    <input type="checkbox" name="checkboxes" id="checkbox1" value="Checkbox1">
+
+    <label for="checkbox2">Checkbox 2</label>
+    <input type="checkbox" name="checkboxes" id="checkbox2" value="Checkbox2">
+
+    <label for="checkbox3">Checkbox 3</label>
+    <input type="checkbox" name="checkboxes" id="checkbox3" value="Checkbox3">
+
+    <textarea>Comments</textarea>
+
+    <button type="submit" id="submit">Submit Form</button>    
 
 
 
