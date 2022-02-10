@@ -1,0 +1,90 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      padding: 30px;
+      background: darkcyan;
+    }
+
+    #title {
+      color: white;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    #description {
+      text-align: center;
+      color: darkblue;
+      margin: 10px auto;
+    }
+
+    #survey-form {
+      width: 60%;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .survey {
+      display: block;
+    }
+
+    label,
+    input {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .option {
+      text-align: center;
+    }
+
+
+    .comments {
+      display: block;
+    }
+
+    .textA {
+      width: 500px;
+      height: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #submit {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container {
+      width: 1000px;
+      height: auto;
+      margin: 0 auto;
+      background-color: aquamarine;
+      padding: 10px;
+    }
+
+
+    footer{
+      background-color: gray;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      font-weight: light;
+    }
+
+    header{
+      text-align: left;
+      font-size: 40px;
+      text-decoration: italic;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 20px;
+    }
